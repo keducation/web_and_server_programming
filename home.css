@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(224, 224, 224);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.first-template {
+    position: absolute;
+    margin: 0%;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+}
+
+.boxone::before {
+    position: absolute;
+    content: '';
+    background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+    width: 100vw;
+    height: 100vh;
+    opacity: .3;
+    z-index: -1;
+}
+
+.span {
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Allison', cursive;
+    font-size: 1000%;
+    height: 70vh;
+}
+
+#span1 {
+    animation-name: span1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#span2 {
+    position: absolute;
+    animation-name: span2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    visibility: hidden;
+}
+
+#span3 {
+    position: absolute;
+    animation-name: span3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    visibility: hidden;
+}
+
+@keyframes span1 {
+    0% {
+        visibility: visible;
+        clip-path: inset(0% 50% 0% 50%);        
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        clip-path: inset(0% 50% 0% 50%);
+    }
+}
+
+@keyframes span2 {
+    0% {
+        visibility: visible;
+        clip-path: inset(0% 50% 0% 50%);        
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        clip-path: inset(0% 50% 0% 50%);
+    }
+}
+
+@keyframes span3 {
+    0% {
+        visibility: visible;
+        clip-path: inset(0% 50% 0% 50%);        
+    }
+
+    100% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.products {
+    margin-top: 100vh;
+}
+
+.pr-bar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-image: linear-gradient(to bottom, black, rgb(17, 17, 17));
+    padding: 2% 0% 2% 0%;
+}
+
+.pr-bar > a {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    padding: 0% 5% 0% 5%;
+}
+
+.pr-bar > a:hover {
+    color: rgb(184, 184, 184);
+}
+
+.cards-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 2% 2% 2% 2%;
+    background-color: rgb(255, 255, 255);
+    height: 61vh;
+    /* border-radius: 30%; */
+    border-radius: 4%;
+}
+
+#card > a > hr{
+    clip-path: inset(0% 10% 0% 10%);
+}
+
+#card > a {
+    padding-top: 2%;
+    padding-bottom: 0%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    font-size: 200%;
+    transition: 0.5s;
+}
+
+#card > a > img {
+    height: 70%;
+    width: 70%;
+    padding: 4% 0% 0% 0%;
+    transition: 0.5s;
+}
+
+#card:hover > a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.250);
+    font-size: 225%;
+    border-radius: 4%;
+}
+
+#card:hover > a > img {
+    height: 75%;
+    width: 75%;
+}
+
+.card-2box {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.250);
+    height: 65vh;
+    margin-top: 5vh;
+}
+
+.card-2box > #title{
+    font-size: 200%;
+    margin-left: 3%;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+.card-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+
+#card-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+#card-2 > a {
+    text-decoration: none;
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+#card-2 > a > img {
+    transition: 0.5s;
+    width: 15vw;
+    /* height: 10vh; */
+}
+
+#card-2:hover > a > img{
+    width: 16vw;
+}

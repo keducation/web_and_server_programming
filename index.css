@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    /* border: 5px solid red; */
+    --c-width: 97vw;
+    --c-height: 20vh;
+}
+
+body {
+    /* border: none; */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar {
+    animation-name: navbar;
+    animation-duration: 1s;
+    animation-delay: 4.8s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    visibility: hidden;
+}
+
+#boxone {
+    position: absolute;
+    margin: 0;
+    /* border: none; */
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    opacity: 1;
+    width: 100vw;
+    z-index: -1;
+    top: 0;
+}
+
+#boxtwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#boxtwo::before {
+    position: absolute;
+    content: '';
+    background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#innerbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* border: 5px solid red; */
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(2, 2fr); */
+    row-gap: 0px; 
+}
+
+.spaned {
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    margin-left: 7%;
+    font-family: 'Allison', cursive;
+    font-size: 1000%;
+    /* border: 5px solid red; */
+}
+
+#span1 {
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    animation: span;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    visibility: hidden;
+    float: left;
+}
+
+#span2 {
+    animation-name: span2;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#span3 {
+    animation-name: span3;
+    animation-duration: 2s;
+    animation-delay: 2.4s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#span4 {
+    animation-name: span4;
+    animation-duration: 2s;
+    animation-delay: 3.6s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#span5 {
+    animation-name: span5;
+    animation-duration: 2s;
+    animation-delay: 4.8s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    /* display: block; */
+    /* margin-top: 80%; */
+    float: left;
+    padding-left: 0%;
+    /* margin-left: 0%; */
+    /* display: block; */
+}
+
+@keyframes span {
+    0% {
+        visibility: visible;
+        clip-path: inset(100% 0% 0% 0%);        
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        position: absolute;
+        clip-path: inset(0% 0% 100% 0%);
+    }
+}
+
+@keyframes span2 {
+    0% {
+        visibility: visible;
+        clip-path: inset(100% 0% 0% 0%);
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        position: absolute;
+        clip-path: inset(0% 0% 100% 0%);
+    }
+}
+@keyframes span3 {
+    0% {
+        visibility: visible;
+        clip-path: inset(100% 0% 0% 0%);
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        position: absolute;
+        clip-path: inset(0% 0% 100% 0%);
+    }
+}
+
+@keyframes span4 {
+    0% {
+        visibility: visible;
+        clip-path: inset(100% 0% 0% 0%);
+    }
+    
+    50% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    100% {
+        position: absolute;
+        clip-path: inset(0% 0% 100% 0%);
+    }
+}
+
+@keyframes span5 {
+    0% {
+        visibility: visible;
+        clip-path: inset(100% 0% 0% 0%);
+    }
+    
+    100% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+@keyframes navbar {
+    0% {
+        visibility: visible;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+    
+    100% {
+        visibility: visible;
+        clip-path: inset(0% 50% 0% 50%);
+    }
+}
+
+.cards {
+    /* border: 5px solid red; */
+    display: flex;
+    background-image: url('images\\electronics.jpg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 50%;
+    /* margin: 2% 0% 2% 0%; */
+    width: var(--c-width);
+    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Merienda', cursive;
+    /* font-family: 'Allison', cursive; */
+    font-size: 600%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.elect {
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    display: flex;
+    background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0));
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 1vh 1vh 3vh rgba(0, 0, 0, 0.3), -1vh -1vh 3vh rgba(0, 0, 0, 0.3); */
+    /* transition-property: all;
+    transition-duration: 2s; */
+}
+
+.elect:hover{
+    background-image: linear-gradient(to right, white 60%, rgba(255, 255, 255, 0));
+    box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.5), -2vh -2vh 3vh rgba(0, 0, 0, 0.5);
+}
+
+
+.rest {
+    text-decoration: none;
+    color: black;
+    /* border: 5px solid red; */
+    width: var(--c-width);
+    height: auto;
+    padding-top: var(--c-height);
+    padding-bottom: var(--c-height);
+    padding-left: 10%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.rest:hover{
+    /* transition-property: all;
+    transition-duration: 2s; */
+    padding-top: 21vh;
+    padding-bottom: 21vh;
+    padding-left: 10%;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.elect2 {
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    display: flex;
+    background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0));
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 1vh 1vh 3vh rgba(0, 0, 0, 0.3), -1vh -1vh 3vh rgba(0, 0, 0, 0.3); */
+    /* transition-property: all;
+    transition-duration: 2s; */
+}
+
+.elect2:hover {
+    background-image: linear-gradient(to left, white 60%, rgba(255, 255, 255, 0));
+    box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.5), -2vh -2vh 3vh rgba(0, 0, 0, 0.5);
+}
+
+.rest2 {
+    text-decoration: none;
+    color: black;
+    /* border: 5px solid red; */
+    width: var(--c-width);
+    height: auto;
+    padding-top: 19vh;
+    padding-bottom: 19vh;
+    padding-right: 10%;
+    transition-property: all;
+    transition-duration: 1s;
+    text-align: right;
+}
+
+.rest2:hover {
+    /* transition-property: all;
+    transition-duration: 2s; */
+    padding-top: var(--c-height);
+    padding-bottom: var(--c-height);
+    padding-left: 10%;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.container {
+    margin-top: 100vh;
+}
+
+#every > .cards {
+    background-image: none;
+}
+
+#border {
+    /* background-image: url('ribbon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; */
+    /* border-radius: 50%; */
+    /* font-family: 'Dancing Script', cursive; */
+    border: none;
+    font-family: 'Allison', cursive;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#every > .cards {
+    margin: 0%;
+    /* border: 5px solid rgb(95, 92, 92); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+}
+
+#fashion > .cards {
+    background-image: url('images\\fashion.jpg');
+    background-position-x: left;
+    /* text-align: right; */
+}
+
+#beauty > .cards {
+    background-image: url('images\\beauty.jpg');
+}
+
+#grocery > .cards{
+    background-image: url('images\\grocery.jpg');
+    background-position-x: left;
+}
+
+#shop > .cards {
+    background-image: url('https://source.unsplash.com/collection/190727/1400x400');
+    background-position-x: center;
+    /* background-position-y: 40%; */
+    background-size: cover;
+}
+#shop > .cards > .elect {
+    background-image: radial-gradient(white 40%, rgba(255, 255, 255, 0.219));
+    justify-content: center;
+    align-self: center;
+}
+
+#shop > .cards > .elect:hover {
+    background-image: radial-gradient(white 50%, rgba(255, 255, 255, 0.219));
+}
+
+#shop2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

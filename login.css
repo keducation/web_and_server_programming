@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins', sans-serif; */
+}
+
+body {
+    background-image: url("https://images.unsplash.com/22/brick-wall.JPG?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25vh;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 5%;
+}
+
+.imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.imgBx {
+    height: 100vh;
+}
+
+.imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.contentBx .formBx {
+    width: 50%;
+}
+
+.contentBx .formBx h2 {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.5cm;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #000000;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+.contentBx .formBx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #000000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.contentBx .formBx .inputBx input[type="submit"] {
+    background: #000000;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contentBx .formBx .inputBx input[type="submit"]:hover {
+    background: #f53677;
+}
+
+.contentBx .formBx .remember {
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contentBx .formBx .inputBx p a {
+    color: #000000;
+}
+
+.contentBx{
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 50vw;
+    border-radius: 50px;
+}
+
+.formBx {
+    margin: 5% 2% 5% 2%;
+}
+
+.search {
+    box-sizing: initial;
+}

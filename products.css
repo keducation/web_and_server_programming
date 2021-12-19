@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    /* background-color: rgba(26, 26, 26); */
+    width: 100vw;
+    background-image: url("images/back.jpg");
+    background-size: contain;
+    background-color: rgba(26, 26, 26, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.3fr 5fr;
+    width: 100vw;
+}
+
+.side-bar{
+    background-image: url("images/back.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    /* border: 5px solid rgba(0, 0, 0, 0.473); */
+}
+
+.filters {
+    /* margin-top: 50%; */
+    margin-left: 5%;
+}
+
+#catogeries > ul {
+    list-style:none;
+    color: rgba(255, 255, 255, 0.459);
+    margin-top: 2%;
+}
+
+.side-bar-content{
+    font-size: large;
+    color: rgba(255, 255, 255, 0.459);
+    /* margin-top: 50%; */
+}
+
+.side-bar-content > span {
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.459);
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.other-filters :nth-child(2){
+    margin-top: 0%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* border: 5px solid red; */
+    /* margin-top: 11%; */
+    width: 100%;
+}
+
+#card{
+    border: 1px solid black;
+    margin: 4% 0% 0% 4% ;
+    background-color: white;
+    transition: 0.5s;
+}
+
+#card:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+#card-img{
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid black; */
+    padding: 2%;
+}
+
+#card-img > img{
+    height: 25%;
+    width: 100%;
+}
+
+#item-info{
+    padding: 1% 2% 1% 2%;
+    font-size: 120%;
+}
+
+#row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+#item-name {
+    display: inline;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#price {
+    display: inline;
+    text-align: right;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.products > a {
+    color: black;
+}
